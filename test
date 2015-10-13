@@ -1,0 +1,2 @@
+#!/bin/sh
+exec python -m doctest -v $PWD/README.md
