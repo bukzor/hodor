@@ -3,8 +3,9 @@ from setuptools import setup
 
 setup(
     name="hodor",
-    version='hodor',
+    version='0',
     description='hodor!',
+    long_description=open('README.md').read(),
     classifiers=[
     ],
     author="Buck Evan",

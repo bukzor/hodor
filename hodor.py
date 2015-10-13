@@ -2,14 +2,17 @@
 # pylint:disable=invalid-name
 from __future__ import print_function
 
+
 def metaclass(cls, mcs):
     "py2/py3 compat, hodor"
     return mcs('hodor', cls.__bases__, dict(vars(cls)))
+
 
 class hodor(type):
     """hodor"""
     def __repr__(cls):
         return 'hodor'
+
     def __call__(cls, *args):
         return cls
 
@@ -26,5 +29,9 @@ for op, val in vars(operator).items():
 
 for op in ('getattr', 'setattr', 'delattr'):
     setattr(hodor, '__%s__' % op, hodor)
+
+# hodor...
+import sys
+sys.modules[__name__] = hodor
 
 __all__ = ('hodor',)
