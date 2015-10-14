@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name="hodor",
-    version='0',
+    version='1!0',
     description='hodor!',
     long_description=open('README.md').read(),
     classifiers=[
