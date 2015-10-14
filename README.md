@@ -39,3 +39,5 @@ My favorite: hodor is an instance of *itself*.
 
     >>> type(hodor) is hodor
     True
+
+Hodor works equally well in python2 and python3.
