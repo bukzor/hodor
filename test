@@ -1,7 +1,7 @@
 #!/bin/sh
 set -eux
-python2.7 -m hodor
-python2.7 -m doctest -v README.md
+test "$(python2 -m hodor 2>&1)" = hodor
+python2 -m doctest -v README.md
 
-python3.4 -m hodor
-python3.4 -m doctest -v README.md
+test "$(python3 -m hodor 2>&1)" = hodor
+python3 -m doctest -v README.md

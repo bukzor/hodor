@@ -32,6 +32,12 @@ for op in ('getattr', 'setattr', 'delattr'):
 
 # hodor...
 import sys
+_ = sys.modules[__name__]  # prevent module gc in python 2
 sys.modules[__name__] = hodor
 
 __all__ = ('hodor',)
+
+main = hodor
+
+if __name__ == '__main__':
+    exit(main())
