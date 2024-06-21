@@ -4,7 +4,7 @@ from setuptools import setup
 
 setup(
     name="hodor",
-    version="2!0",
+    version="3!0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0",
     description="hodor!",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
